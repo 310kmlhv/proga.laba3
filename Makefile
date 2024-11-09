@@ -9,5 +9,4 @@ test:
 rebuild: clean main
 
 clean:
-	rm -rf *.txt main
 	rm -rf *.txt test

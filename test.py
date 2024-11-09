@@ -17,13 +17,5 @@ class TestCardValidation(unittest.TestCase):
             file.write("Card: 1234-5678-9012-3456")
         self.assertEqual(find_card_numbers_in_file('test_file.txt'), ["1234-5678-9012-3456"])
 
-        # # Проверка с пустым файлом
-        # with open('empty_file.txt', 'w') as file:
-        #     file.write("")
-        # self.assertEqual(find_card_numbers_in_file('empty_file.txt'), [])
-
-        # # Проверка с несуществующим файлом
-        # self.assertEqual(find_card_numbers_in_file('non_existent_file.txt'), [])
-
 if __name__ == '__main__':
     unittest.main()
